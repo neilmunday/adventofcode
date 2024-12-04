@@ -9,6 +9,7 @@ import (
 //go:embed day1.txt
 //go:embed day2.txt
 //go:embed day3.txt
+//go:embed day4.txt
 var content embed.FS
 
 func GetFileContents(day int) string {
