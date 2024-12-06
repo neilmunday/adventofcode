@@ -20,7 +20,11 @@ func GetFileContents(day int) string {
 	return string(fileBytes)
 }
 
-func GetInt(input string) int64 {
+func GetInt(input string) int {
+	return int(GetInt64(input))
+}
+
+func GetInt64(input string) int64 {
 	n, err := strconv.ParseInt(input, 10, 32)
 
 	if err != nil {

@@ -8,11 +8,11 @@ import (
 
 const day int = 3
 
-func getTotal(contents string) int64 {
+func getTotal(contents string) int {
 	mulRe := regexp.MustCompile(`mul\([0-9]+,[0-9]+\)`)
 	numRe := regexp.MustCompile(`mul\(([0-9]+),([0-9]+)\)`)
 
-	var total int64 = 0
+	var total int = 0
 
 	for _, mulMatch := range mulRe.FindAllString(contents, -1) {
 		matches := numRe.FindStringSubmatch(mulMatch)
