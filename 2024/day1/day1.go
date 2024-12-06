@@ -7,8 +7,10 @@ import (
 	"strings"
 )
 
+const day int = 1
+
 func Part1() {
-	contents := input.GetFileContents(1)
+	contents := input.GetFileContents(day)
 
 	lines := strings.Split(contents, "\n")
 
@@ -43,7 +45,7 @@ func Part1() {
 }
 
 func Part2() {
-	contents := input.GetFileContents(1)
+	contents := input.GetFileContents(day)
 
 	lines := strings.Split(contents, "\n")
 

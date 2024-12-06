@@ -6,6 +6,8 @@ import (
 	"regexp"
 )
 
+const day int = 3
+
 func getTotal(contents string) int64 {
 	mulRe := regexp.MustCompile(`mul\([0-9]+,[0-9]+\)`)
 	numRe := regexp.MustCompile(`mul\(([0-9]+),([0-9]+)\)`)
@@ -24,14 +26,14 @@ func getTotal(contents string) int64 {
 }
 
 func Part1() {
-	contents := input.GetFileContents(3)
+	contents := input.GetFileContents(day)
 	total := getTotal(contents)
 
 	fmt.Printf("Part 1 answer: %d\n", total)
 }
 
 func Part2() {
-	contents := input.GetFileContents(3)
+	contents := input.GetFileContents(day)
 
 	contentsLen := len(contents)
 	newContents := ""

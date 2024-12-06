@@ -9,6 +9,8 @@ import (
 	"strings"
 )
 
+const day int = 2
+
 func isSafe(numbers []string) bool {
 	var prevVal int64 = 0
 
@@ -77,7 +79,7 @@ func isSafe(numbers []string) bool {
 }
 
 func Part1() {
-	contents := input.GetFileContents(2)
+	contents := input.GetFileContents(day)
 	lines := strings.Split(contents, "\n")
 
 	var safe = 0
@@ -96,7 +98,7 @@ func Part1() {
 }
 
 func Part2() {
-	contents := input.GetFileContents(2)
+	contents := input.GetFileContents(day)
 	lines := strings.Split(contents, "\n")
 
 	var safe = 0
