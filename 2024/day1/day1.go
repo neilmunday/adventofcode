@@ -31,7 +31,7 @@ func Part1() {
 
 	var totalDiff = 0
 
-	for i, _ := range list1 {
+	for i := range list1 {
 		if list1[i] > list2[i] {
 			totalDiff += list1[i] - list2[i]
 		} else {
