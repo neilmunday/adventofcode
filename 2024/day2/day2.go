@@ -78,7 +78,7 @@ func isSafe(numbers []string) bool {
 	return ok
 }
 
-func Part1() {
+func Part1() int {
 	contents := input.GetFileContents(day)
 	lines := strings.Split(contents, "\n")
 
@@ -95,9 +95,11 @@ func Part1() {
 	}
 
 	fmt.Printf("Part 1 answer: %d\n", safe)
+
+	return safe
 }
 
-func Part2() {
+func Part2() int {
 	contents := input.GetFileContents(day)
 	lines := strings.Split(contents, "\n")
 
@@ -129,4 +131,6 @@ func Part2() {
 	}
 
 	fmt.Printf("Part 2 answer: %d\n", safe)
+
+	return safe
 }

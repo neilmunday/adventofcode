@@ -25,14 +25,16 @@ func getTotal(contents string) int {
 	return total
 }
 
-func Part1() {
+func Part1() int {
 	contents := input.GetFileContents(day)
 	total := getTotal(contents)
 
 	fmt.Printf("Part 1 answer: %d\n", total)
+
+	return total
 }
 
-func Part2() {
+func Part2() int {
 	contents := input.GetFileContents(day)
 
 	contentsLen := len(contents)
@@ -65,4 +67,6 @@ func Part2() {
 	total := getTotal(newContents)
 
 	fmt.Printf("Part 2 answer: %d\n", total)
+
+	return total
 }
