@@ -25,7 +25,7 @@ func GetInt(input string) int {
 }
 
 func GetInt64(input string) int64 {
-	n, err := strconv.ParseInt(input, 10, 32)
+	n, err := strconv.ParseInt(input, 10, 64)
 
 	if err != nil {
 		panic(err)
