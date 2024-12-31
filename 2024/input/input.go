@@ -33,3 +33,7 @@ func GetInt64(input string) int64 {
 
 	return n
 }
+
+func GetFloat64(input string) float64 {
+	return float64(GetInt64(input))
+}
