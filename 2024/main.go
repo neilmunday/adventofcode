@@ -62,7 +62,7 @@ func main() {
 	} else if day == 12 {
 		day12.Part1and2()
 	} else if day == 13 {
-		day13.Part1()
+		day13.Part1and2()
 	} else {
 		fmt.Printf("Invalid day: %d\n", day)
 		os.Exit(1)

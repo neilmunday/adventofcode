@@ -48,7 +48,7 @@ func (equation *Equation) CramersSolve() (int, int) {
 	return a, b
 }
 
-func Part1() {
+func Part1and2() {
 	contents := input.GetFileContents(day)
 	lines := strings.Split(contents, "\n")
 
