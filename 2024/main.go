@@ -6,6 +6,7 @@ import (
 	"aoc/day11"
 	"aoc/day12"
 	"aoc/day13"
+	"aoc/day14"
 	"aoc/day2"
 	"aoc/day3"
 	"aoc/day4"
@@ -63,6 +64,9 @@ func main() {
 		day12.Part1and2()
 	} else if day == 13 {
 		day13.Part1and2()
+	} else if day == 14 {
+		day14.Part1and2(false)
+		day14.Part1and2(true)
 	} else {
 		fmt.Printf("Invalid day: %d\n", day)
 		os.Exit(1)
