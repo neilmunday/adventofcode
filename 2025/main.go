@@ -5,6 +5,7 @@ import (
 	"aoc/day2"
 	"aoc/day3"
 	"aoc/day4"
+	"aoc/day5"
 	"flag"
 	"fmt"
 	"os"
@@ -21,19 +22,23 @@ func main() {
 		os.Exit(1)
 	}
 
-	if day == 1 {
+	switch day {
+	case 1:
 		day1.Part1()
 		day1.Part2()
-	} else if day == 2 {
+	case 2:
 		day2.Part1()
 		day2.Part2()
-	} else if day == 3 {
+	case 3:
 		day3.Part1()
 		day3.Part2()
-	} else if day == 4 {
+	case 4:
 		day4.Part1()
 		day4.Part2()
-	} else {
+	case 5:
+		day5.Part1()
+		day5.Part2()
+	default:
 		fmt.Printf("Invalid day: %d\n", day)
 		os.Exit(1)
 	}
